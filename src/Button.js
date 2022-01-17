@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 const Button = (props) => {
-  const [text, setText] = useState("START");
-  const handleClick = () => {
-    text === "START" ? setText("PLAY AGAIN?") : setText("START");
-  };
+  const [text, setText] = useState(true);
+  // const handleClick = () => {
+  //   text === "START" ? setText("PLAY AGAIN?") : setText("START");
+  // };
 
   return (
-    <button className="button" onClick={handleClick}>
-      {text}
+    <button className="button" onClick={() => setText(!text)}>
+      {text ? "START" : "PLAY AGAIN?"}
     </button>
   );
 };
