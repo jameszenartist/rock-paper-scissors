@@ -7,7 +7,7 @@ const Button = (props) => {
   // };
 
   return (
-    <button className="button" onClick={() => setText(!text)}>
+    <button className="start-btn" onClick={() => setText(!text)}>
       {text ? "START" : "PLAY AGAIN?"}
     </button>
   );
