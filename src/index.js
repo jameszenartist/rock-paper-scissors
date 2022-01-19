@@ -1,15 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Scoreboard from "./Scoreboard";
-import Elements from "./Elements";
+import Rock from "./Rock";
+import Paper from "./Paper";
+import Scissors from "./Scissors";
 import Button from "./Button";
+import SayHello from "./SayHello";
 import "./index.css";
 
 function App() {
   return (
     <div className="container">
       <Scoreboard />
-      <Elements />
+      <div className="elements">
+        <Rock />
+        <Paper />
+        <Scissors SayHello={SayHello} />
+      </div>
       <Button />
     </div>
   );

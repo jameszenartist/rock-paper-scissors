@@ -1,6 +1,7 @@
 import React from "react";
 
-const Scissors = (props) => {
+const Scissors = ({ SayHello }) => {
+  SayHello();
   return (
     <div className="scissors">
       <h2>SCISSORS</h2>
