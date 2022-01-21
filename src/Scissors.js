@@ -1,9 +1,9 @@
 import React from "react";
 
-const Scissors = ({ setNum }) => {
+const Scissors = ({ handleClick }) => {
   let choice = 2;
   return (
-    <button className="scissors" onClick={() => setNum(choice)}>
+    <button className="scissors" onClick={() => handleClick(choice)}>
       <h2>SCISSORS</h2>
     </button>
   );

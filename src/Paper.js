@@ -1,9 +1,9 @@
 import React from "react";
 
-const Paper = ({ setNum }) => {
+const Paper = ({ handleClick }) => {
   let choice = 1;
   return (
-    <button className="paper" onClick={() => setNum(choice)}>
+    <button className="paper" onClick={() => handleClick(choice)}>
       <h2>PAPER</h2>
     </button>
   );

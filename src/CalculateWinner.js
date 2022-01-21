@@ -6,7 +6,7 @@ const letters = [
 ];
 
 function Calculatetext(num) {
-  let result;
+  let result = "";
   let comp = Math.floor(Math.random() * (3 - 0) + 0);
 
   console.log("player's choice is: ", num);
@@ -22,6 +22,7 @@ function Calculatetext(num) {
           : (result = "YOU WIN!");
         console.log(letters[i][j]);
         console.log(result);
+
         return result;
       }
     }
