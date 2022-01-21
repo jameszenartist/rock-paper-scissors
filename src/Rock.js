@@ -1,16 +1,11 @@
 import React from "react";
 
-const Rock = (props) => {
+const Rock = ({ setNum }) => {
+  let choice = 0;
   return (
-    <div className="rock">
+    <button className="rock" onClick={() => setNum(choice)}>
       <h2>ROCK</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-        accusamus obcaecati? In quaerat cupiditate, temporibus, quae nisi
-        blanditiis ea, neque nesciunt cum corporis repellat. Ea voluptatum
-        voluptatem perferendis ipsam explicabo.
-      </p>
-    </div>
+    </button>
   );
 };
 

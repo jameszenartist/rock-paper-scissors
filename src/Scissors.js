@@ -1,17 +1,11 @@
 import React from "react";
 
-const Scissors = ({ SayHello }) => {
-  SayHello();
+const Scissors = ({ setNum }) => {
+  let choice = 2;
   return (
-    <div className="scissors">
+    <button className="scissors" onClick={() => setNum(choice)}>
       <h2>SCISSORS</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-        accusamus obcaecati? In quaerat cupiditate, temporibus, quae nisi
-        blanditiis ea, neque nesciunt cum corporis repellat. Ea voluptatum
-        voluptatem perferendis ipsam explicabo.
-      </p>
-    </div>
+    </button>
   );
 };
 

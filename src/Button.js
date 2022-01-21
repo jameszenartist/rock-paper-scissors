@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import CalculateWinner from "./CalculateWinner";
 
-const Button = (props) => {
-  const [text, setText] = useState(true);
-  // const handleClick = () => {
-  //   text === "START" ? setText("PLAY AGAIN?") : setText("START");
-  // };
-
+const Button = ({ num, text, setText }) => {
   return (
-    <button className="start-btn" onClick={() => setText(!text)}>
-      {text ? "START" : "PLAY AGAIN?"}
+    <button className="start-btn" onClick={() => setText(CalculateWinner(num))}>
+      {text === "IT'S A TIE!" || text === "YOU LOSE!" || text === "YOU WIN!"
+        ? "PLAY AGAIN?"
+        : "START"}
     </button>
   );
 };

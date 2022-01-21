@@ -61,17 +61,26 @@ body,
 .scissors {
   width: 30%;
   margin: 0 auto;
+  padding: 0.5rem;
+  background: #0a0505;
   border: 2px solid #f00e2e;
   border-radius: 5px;
   text-align: center;
+  font-size: 1rem;
   border: 2px solid #f00e2e;
   text-shadow: 0 0 10px #f00e2e;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 .rock:hover,
 .paper:hover,
-.scissors:hover {
+.scissors:hover,
+.start-btn:hover,
+.rock:focus,
+.paper:focus,
+.scissors:focus {
   box-shadow: 0 0 15px #f00e2e;
 }
 
@@ -84,7 +93,6 @@ body,
   border: 2px solid #f00e2e;
   border-radius: 5px;
   text-shadow: 0 0 10px #f00e2e;
-  box-shadow: 0 0 12px #f00e2e;
   cursor: pointer;
 }
 
