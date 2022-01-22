@@ -75,7 +75,18 @@ body,
   text-shadow: 0 0 10px #f00e2e;
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.rock-icon {
+  transform: rotate(45deg);
+}
+.paper-icon {
+  transform: rotate(90deg);
+}
+.scissors-icon {
+  transform: scaleX(-1) rotate(90deg);
 }
 
 .rock:hover,
