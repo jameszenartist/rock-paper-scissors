@@ -1,17 +1,17 @@
 import React from "react";
 import CalculateWinner from "./CalculateWinner";
 
-const Button = ({ num, text, setText }) => {
+const Button = ({ num, setNum, text, setText }) => {
   return (
     <button
       className="start-btn"
       onClick={() => {
         if (num === null) {
           console.log("the num is:", num);
-          alert("Please Choose!");
+          return alert("Please choose!");
         }
-
         setText(CalculateWinner(num));
+        setNum(null);
       }}
     >
       {text === "IT'S A TIE!" || text === "YOU LOSE!" || text === "YOU WIN!"

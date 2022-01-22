@@ -51,6 +51,10 @@ body,
   align-items: center;
 }
 
+.status {
+  margin-top: 20px;
+}
+
 .elements {
   width: 80%;
   flex-direction: row;
