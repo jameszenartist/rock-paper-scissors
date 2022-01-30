@@ -17,8 +17,7 @@ body,
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
 }
 
 .container {
@@ -26,12 +25,11 @@ body,
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
 }
 
 .scoreboard {
-  width: 50%;
+  width: 60%;
   border: 4px solid #f00e2e;
   border-radius: 5px;
   box-shadow: 0 0 12px #f00e2e;
@@ -47,8 +45,7 @@ body,
   text-shadow: 0 0 10px #f00e2e;
   text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
 }
 
 .status {
@@ -75,15 +72,24 @@ body,
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
 }
 
-.rock:hover > .rock-icon,
-.paper:hover > .paper-icon,
+.rock-icon,
+.paper-icon,
+.scissors-icon {
+  transition-duration: 0.25s;
+}
+
+.rock:hover > .rock-icon {
+  transform: scale(1.25) rotate(45deg);
+}
+
+.paper:hover > .paper-icon {
+  transform: scale(1.25) rotate(90deg);
+}
 .scissors:hover > .scissors-icon {
-  transform: scale(110%);
-  animation: grow 0.25s linear;
+  transform: scaleX(-1) scale(1.25) rotate(90deg);
 }
 
 .rock-icon {
@@ -118,14 +124,14 @@ body,
   cursor: pointer;
 }
 
-@keyframes grow {
+/* @keyframes grow {
   from {
     transform: scale(1);
   }
   to {
     transform: scale(1.25);
   }
-}
+} */
 
 @media only screen and (max-width: 512px) {
   #root {
