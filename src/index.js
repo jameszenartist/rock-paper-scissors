@@ -27,17 +27,20 @@ function App() {
   }, [text]);
 
   const handleClick = (num) => {
+    setText("CHOOSE WISELY");
     setNum(null);
-    // setText("");
     setNum(num);
   };
 
   return (
     <div className="container">
       <Scoreboard count={count} compCount={compCount} />
-      {/* <h1>CHOOSE WISELY</h1> */}
-      <h1 className="status">{text}</h1>
-      {/* <h1>{count}</h1> */}
+      <div className="status">
+        <h1>{text}</h1>
+        <h1 className="pulse">
+          {text !== "CHOOSE WISELY" ? "PLAY AGAIN?" : ""}
+        </h1>
+      </div>
       <div className="elements">
         <Rock handleClick={handleClick} />
         <Paper handleClick={handleClick} />

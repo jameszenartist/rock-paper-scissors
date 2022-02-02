@@ -49,7 +49,10 @@ body,
 }
 
 .status {
-  margin-top: 20px;
+  margin: auto 0;
+  padding: 1rem 0;
+  height: 6rem;
+  text-align: center;
 }
 
 .elements {
@@ -110,6 +113,7 @@ body,
 .paper:focus,
 .scissors:focus {
   box-shadow: 0 0 15px #f00e2e;
+  filter: brightness(1.5);
 }
 
 .start-btn {
@@ -124,14 +128,16 @@ body,
   cursor: pointer;
 }
 
-/* @keyframes grow {
-  from {
-    transform: scale(1);
+.pulse {
+  font-weight: 800;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0;
   }
-  to {
-    transform: scale(1.25);
-  }
-} */
+}
 
 @media only screen and (max-width: 512px) {
   #root {

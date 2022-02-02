@@ -7,6 +7,7 @@ const Button = ({ num, setNum, text, setText }) => {
       className="start-btn"
       onClick={() => {
         if (num === null) {
+          setText("CHOOSE WISELY");
           console.log("the num is:", num);
           return alert("Please choose!");
         }
@@ -14,9 +15,7 @@ const Button = ({ num, setNum, text, setText }) => {
         setNum(null);
       }}
     >
-      {text === "IT'S A TIE!" || text === "YOU LOSE!" || text === "YOU WIN!"
-        ? "PLAY AGAIN?"
-        : "START"}
+      START
     </button>
   );
 };
