@@ -153,25 +153,58 @@ body,
   }
 }
 
-@media only screen and (max-width: 512px) {
-  #root {
-    width: 90%;
-    display: flex;
+@media only screen and (max-width: 769px) {
+  .rock-icon,
+  .paper-icon,
+  .scissors-icon {
+    width: 80%;
   }
 
-  .board,
-  .game-info {
-    width: 50%;
+  button > h2 {
+    text-align: center;
   }
 }
 
-@media only screen and (max-width: 420px) {
-  #root {
-    flex-direction: column;
+@media only screen and (max-width: 620px) {
+  button > h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 526px) {
+  button > h2 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .scoreboard {
+    width: 70%;
+  }
+  button > h2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .scoreboard,
+  .elements {
+    width: 90%;
+  }
+  .status {
+    margin: 0.5rem auto;
   }
 
-  .board,
-  .game-info {
-    width: auto;
+  .elements {
+    padding: 0;
+  }
+  .start-btn {
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  .status {
+    font-size: 0.8rem;
   }
 }

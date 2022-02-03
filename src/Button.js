@@ -9,7 +9,6 @@ const Button = ({ num, setNum, setText }) => {
       onClick={() => {
         if (num === null) {
           setText("CHOOSE WISELY");
-          console.log("the num is:", num);
           return swal("Please choose!", {
             className: "alert",
           });
