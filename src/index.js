@@ -13,18 +13,21 @@ function App() {
   const [count, setCount] = useState(0);
   const [compCount, setCompCount] = useState(0);
 
-  function changeScore() {
-    if (text === "YOU WIN!") {
-      setCount(count + 1);
+  function changeScore(str, num1, num2) {
+    if (str === "YOU WIN!") {
+      setCount(num1 + 1);
     }
-    if (text === "YOU LOSE!") {
-      setCompCount(compCount + 1);
+    if (str === "YOU LOSE!") {
+      setCompCount(num2 + 1);
     }
   }
 
-  useEffect(() => {
-    changeScore();
-  }, [text]);
+  useEffect(
+    (text, count, compCount) => {
+      changeScore(text, count, compCount);
+    },
+    [text]
+  );
 
   const handleClick = (num) => {
     setText("CHOOSE WISELY");
