@@ -162,6 +162,12 @@ body,
 }
 
 @media only screen and (max-width: 769px) {
+  .scoreboard {
+    width: 60%;
+  }
+  .elements {
+    width: 70%;
+  }
   button > h2 {
     text-align: center;
   }
@@ -171,22 +177,12 @@ body,
 }
 
 @media only screen and (max-width: 620px) {
-  .scoreboard {
-    width: 50%;
-  }
   button > h2 {
     font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 526px) {
-  .scoreboard {
-    width: 60%;
-  }
-  .elements {
-    width: 70%;
-  }
-
   .status {
     margin: 0.5rem auto;
   }
@@ -197,12 +193,6 @@ body,
 }
 
 @media only screen and (max-width: 430px) {
-  .status {
-    font-size: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 320px) {
   .scoreboard,
   .elements {
     width: 90%;
@@ -211,6 +201,12 @@ body,
   .elements {
     padding: 0;
   }
+  .status {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
   .start-btn {
     margin: 1rem auto;
   }
