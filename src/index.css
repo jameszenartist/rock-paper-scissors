@@ -29,7 +29,7 @@ body,
 }
 
 .scoreboard {
-  width: 60%;
+  width: 40%;
   border: 4px solid #f00e2e;
   border-radius: 5px;
   box-shadow: 0 0 12px #f00e2e;
@@ -56,7 +56,7 @@ body,
 }
 
 .elements {
-  width: 80%;
+  width: 60%;
   flex-direction: row;
 }
 
@@ -153,35 +153,51 @@ body,
   }
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1140px) {
   .rock-icon,
   .paper-icon,
   .scissors-icon {
     width: 80%;
   }
+}
 
+@media only screen and (max-width: 769px) {
   button > h2 {
     text-align: center;
   }
-}
-
-@media only screen and (max-width: 620px) {
   button > h2 {
     font-size: 1.25rem;
   }
 }
 
-@media only screen and (max-width: 526px) {
+@media only screen and (max-width: 620px) {
+  .scoreboard {
+    width: 50%;
+  }
   button > h2 {
     font-size: 1rem;
   }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 526px) {
   .scoreboard {
+    width: 60%;
+  }
+  .elements {
     width: 70%;
   }
+
+  .status {
+    margin: 0.5rem auto;
+  }
+
   button > h2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .status {
     font-size: 0.8rem;
   }
 }
@@ -191,20 +207,11 @@ body,
   .elements {
     width: 90%;
   }
-  .status {
-    margin: 0.5rem auto;
-  }
 
   .elements {
     padding: 0;
   }
   .start-btn {
     margin: 1rem auto;
-  }
-}
-
-@media only screen and (max-width: 270px) {
-  .status {
-    font-size: 0.8rem;
   }
 }
