@@ -1,7 +1,8 @@
 import React from "react";
 import CalculateWinner from "./CalculateWinner";
+import swal from "sweetalert";
 
-const Button = ({ num, setNum, text, setText }) => {
+const Button = ({ num, setNum, setText }) => {
   return (
     <button
       className="start-btn"
@@ -9,7 +10,9 @@ const Button = ({ num, setNum, text, setText }) => {
         if (num === null) {
           setText("CHOOSE WISELY");
           console.log("the num is:", num);
-          return alert("Please choose!");
+          return swal("Please choose!", {
+            className: "alert",
+          });
         }
         setText(CalculateWinner(num));
         setNum(null);

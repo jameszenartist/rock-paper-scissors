@@ -60,6 +60,20 @@ body,
   flex-direction: row;
 }
 
+.alert,
+.swal-button {
+  border: 4px solid #f00e2e;
+  background: #0a0505;
+  color: #f00e2e;
+}
+
+.swal-text {
+  background: #0a0505;
+  text-align: center;
+  color: #f00e2e;
+  font-size: 1.5rem;
+}
+
 .rock,
 .paper,
 .scissors {
