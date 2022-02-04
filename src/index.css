@@ -190,6 +190,9 @@ body,
   button > h2 {
     font-size: 0.8rem;
   }
+  .start-btn {
+    margin: 1rem auto;
+  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -203,11 +206,5 @@ body,
   }
   .status {
     font-size: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .start-btn {
-    margin: 1rem auto;
   }
 }
